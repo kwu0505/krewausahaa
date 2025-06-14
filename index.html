@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kreasi Wajah Usaha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            margin: 0;
+        }
+        
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6a00;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.05em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #222;
+        }
+        
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            border-left: 6px solid #ff6a00;
+            padding-left: 15px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .portfolio,
+        .testimonial-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .portfolio img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio img:hover {
+            transform: scale(1.03);
+        }
+        
+        .service,
+        .testimonial {
+            background: #fff;
+            flex: 1 1 300px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .service:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #ff6a00;
+        }
+        
+        .service p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .testimonial p {
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            font-weight: normal;
+        }
+        
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 12px;
+            margin-bottom: 24px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        
+        form button {
+            background-color: #ff6a00;
+            color: white;
+            padding: 14px 28px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        
+        form button:hover {
+            background-color: #e15d00;
+        }
+        
+        footer {
+            background-color: #1e1e2f;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #ff6a00;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9em;
+            }
+            .service,
+            .testimonial {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kreasi Wajah Usaha</h1>
+        <p>Solusi Desain Grafis Kreatif untuk Bisnismu</p>
+    </header>
+
+    <nav>
+        <a href="#layanan">Layanan</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#pesan">Pemesanan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section id="layanan">
+        <h2>Layanan Kami</h2>
+        <div class="portfolio">
+            <div class="service">
+                <h3>Desain Logo</h3>
+                <p>Desain logo profesional yang mencerminkan identitas merek bisnis dengan visual yang menarik dan mudah dikenali.</p>
+                <p>Rp.5000</p>
+            </div>
+            <div class="service">
+                <h3>Desain Poster</h3>
+                <p>Poster yang dirancang untuk tujuan promosi, mengedepankan pesan dengan desain yang mencolok dan komunikatif.</p>
+                <p>Rp.5000</p>
+            </div>
+            <div class="service">
+                <h3>Branding</h3>
+                <p>Pengembangan identitas merek yang kuat, mulai dari logo hingga elemen visual yang konsisten di seluruh platform.</p>
+                <p>Rp.10000</p>
+            </div>
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>Strategi pemasaran digital yang efektif untuk meningkatkan jangkauan dan keterlibatan audiens di platform digital.</p>
+                <p>Rp.15000</p>
+            </div>
+            <div class="service">
+                <h3>Creative Agency</h3>
+                <p>Layanan kreatif yang mencakup segala kebutuhan desain dan komunikasi visual untuk membantu bisnis berkembang secara kreatif.</p>
+                <p>Rp. 20000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio">
+            <div class="service">
+                <h3>Desain Logo</h3>
+                <img src="COOMINGSOON.png" alt="Desain Logo" />
+            </div>
+
+            <div class="service">
+                <h3>Desain Poster</h3>
+                <img src="COOMINGSOON.png" alt="Desain Poster" />
+            </div>
+
+            <div class="service">
+                <h3>Branding</h3>
+                <img src="COOMINGSOON.png" alt="Branding" />
+            </div>
+
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <img src="COOMINGSOON.png" alt="Digital Marketing" />
+            </div>
+
+            <div class="service">
+                <h3>Creative Agency</h3>
+                <img src="COOMINGSOON.png" alt="Creative Agency" />
+            </div>
+        </div>
+    </section>
+
+    <section id="testimoni">
+        <h2>Testimoni Klien</h2>
+        <div class="testimonial-group">
+            <div class="testimonial">
+                <p>"-.-" – <strong>-.-</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"-.-" – <strong>-.-</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesan">
+        <h2>Pemesanan</h2>
+        <form action="https://formspree.io/f/xkgrbnoe" method="POST">
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap kamu" required />
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Alamat email aktif" required />
+            <label>Jenis Desain:</label>
+            <input type="text" name="jenis" placeholder="Logo, Poster, dll" required />
+            <label>Deskripsi Kebutuhan:</label>
+            <textarea name="pesan" placeholder="Jelaskan detail desain yang kamu inginkan..." rows="5" required></textarea>
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+6281279578817" target="_blank">+62 812-7957-8817</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+6282279767362" target="_blank">+62 822-7976-7362</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+6282279165263" target="_blank">+62 822-7916-5263</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+6285266080005" target="_blank">+62 852-6608-0005</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+6281271165803" target="_blank">+62 812-7116-5803</a></p>
+        <p><i class="fas fa-envelope"></i> Email: kreasiwajahusaha@gmail.com</p>
+        <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/krewausaha/profilecard/?igsh=MWFjYzYwZDFjbG0zcA==" target="_blank">@kreasiwajahusaha</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kreasi Wajah Usaha. All rights reserved. | <a href="https://www.instagram.com/krewausaha/profilecard/?igsh=MWFjYzYwZDFjbG0zcA==" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+
+</html>
